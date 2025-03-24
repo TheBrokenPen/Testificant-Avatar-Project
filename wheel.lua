@@ -2,6 +2,7 @@ local mainPage = action_wheel:newPage()
 local emotePage = action_wheel:newPage()
 local playerpage = action_wheel:newPage()
 local musnum = 0
+local albumnum = 0
 
 function events.entity_init()
     action_wheel:setPage(mainPage)
@@ -27,7 +28,8 @@ randomplay:item("design_decor:glitch_warning_sign")
 randomplay:title("Random Music")
 randomplay:onLeftClick(function()
     --musnum = 16
-    musnum = math.random(1,4)*100 + math.random(1,10)
+    albumnum = math.random(1,4)*100
+    musnum = albumnum + math.random(1,10)
     pings.msplay()
 end)
 
