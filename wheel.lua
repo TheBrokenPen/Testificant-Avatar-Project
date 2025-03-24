@@ -26,37 +26,36 @@ local randomplay = playerpage:newAction()
 randomplay:item("design_decor:glitch_warning_sign")
 randomplay:title("Random Music")
 randomplay:onLeftClick(function()
-    musnum = 16
-    --musnum = math.random(15)
+    --musnum = 16
+    musnum = math.random(1,4)*100 + math.random(1,10)
     pings.msplay()
 end)
 
 function pings.msplay()
     if not player:isLoaded() then return end
     --Overworld--
-    if musnum == 1 then sounds:playSound("music.creative",player:getPos()) log("Playing creative music")
-    elseif musnum == 2 then sounds:playSound("music.game",player:getPos()) log("Playing game music")
-    elseif musnum == 3 then sounds:playSound("music.menu",player:getPos()) log("Playing menu music")
-    elseif musnum == 4 then sounds:playSound("music.overworld.swamp",player:getPos()) log("Playing Swamp Music")
-    elseif musnum == 5 then sounds:playSound("music.overworld.grove",player:getPos()) log("Playing Grove Music")
-    elseif musnum == 6 then sounds:playSound("music.overworld.lush_caves",player:getPos()) log("Playing Lush Caves Music")
-    elseif musnum == 7 then sounds:playSound("music.overworld.cherry_grove",player:getPos()) log("Playing Cherry Grove Music")
-    elseif musnum == 8 then sounds:playSound("music.overworld.badlands",player:getPos()) log("Playing Badlands Music")
+    if musnum == 101 then sounds:playSound("music.creative",player:getPos()) log("Playing creative music")
+    elseif musnum == 102 then sounds:playSound("music.game",player:getPos()) log("Playing game music")
+    elseif musnum == 103 then sounds:playSound("music.menu",player:getPos()) log("Playing menu music")
+    elseif musnum == 104 then sounds:playSound("music.overworld.swamp",player:getPos()) log("Playing Swamp Music")
+    elseif musnum == 105 then sounds:playSound("music.overworld.grove",player:getPos()) log("Playing Grove Music")
+    elseif musnum == 106 then sounds:playSound("music.overworld.lush_caves",player:getPos()) log("Playing Lush Caves Music")
+    elseif musnum == 107 then sounds:playSound("music.overworld.cherry_grove",player:getPos()) log("Playing Cherry Grove Music")
+    elseif musnum == 108 then sounds:playSound("music.overworld.badlands",player:getPos()) log("Playing Badlands Music")
     --Nether--
-    elseif musnum == 9 then sounds:playSound("music.nether.basalt_deltas",player:getPos()) log("Playing 1.16 Update Music")
+    elseif musnum == 201 then sounds:playSound("music.nether.basalt_deltas",player:getPos()) log("Playing 1.16 Update Music")
     --The End--
-    elseif musnum == 10 then sounds:playSound("music.credits",player:getPos()) log("Playing [Alpha]")
+    elseif musnum == 301 then sounds:playSound("music.credits",player:getPos()) log("Playing [Alpha]")
     --Music Discs--
-    elseif musnum == 11 then sounds:playSound("morediscs:music_disc_sky_sound",player:getPos()) log("Playing [Sky]")
-    elseif musnum == 12 then sounds:playSound("morediscs:music_disc_antiremake_sound",player:getPos()) log("Playing [Anti Remake]")
-    elseif musnum == 13 then sounds:playSound("music_disc.cat",player:getPos()) log("Playing [Cat]")
-    elseif musnum == 14 then sounds:playSound("music_disc.otherside",player:getPos()) log("Playing [OtherSide]")
-    elseif musnum == 15 then sounds:playSound("music_disc.wait",player:getPos()) log("Playing [Wait]")
-    elseif musnum == 16 then sounds:playSound("music_disc.strad",player:getPos()) log("Playing [Strad]")
-    elseif musnum == 17 then sounds:playSound("music_disc.mall",player:getPos()) log("Playing [Mall]")
-    elseif musnum == 18 then sounds:playSound("music_disc.11",player:getPos()) log("Playing [11]")
-
-    elseif musnum == 19 then sounds:playSound("music_disc.wait",player:getPos()) log("Playing [Wait]")
+    elseif musnum == 401 then sounds:playSound("morediscs:music_disc_sky_sound",player:getPos()) log("Playing [Sky]")
+    elseif musnum == 402 then sounds:playSound("morediscs:music_disc_antiremake_sound",player:getPos()) log("Playing [Anti Remake]")
+    elseif musnum == 403 then sounds:playSound("music_disc.cat",player:getPos()) log("Playing [Cat]")
+    elseif musnum == 404 then sounds:playSound("music_disc.otherside",player:getPos()) log("Playing [OtherSide]")
+    elseif musnum == 405 then sounds:playSound("music_disc.wait",player:getPos()) log("Playing [Wait]")
+    elseif musnum == 406 then sounds:playSound("music_disc.strad",player:getPos()) log("Playing [Strad]")
+    elseif musnum == 407 then sounds:playSound("music_disc.mall",player:getPos()) log("Playing [Mall]")
+    elseif musnum == 408 then sounds:playSound("music_disc.11",player:getPos()) log("Playing [11]")
+    elseif musnum == 409 then sounds:playSound("music_disc.wait",player:getPos()) log("Playing [Wait]")
     else log("Error: Invalid Music Number")
     end
 end
