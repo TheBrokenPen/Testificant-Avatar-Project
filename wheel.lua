@@ -44,8 +44,11 @@ function pings.msplay()
     elseif musnum == 106 then sounds:playSound("music.overworld.lush_caves",player:getPos()) log("Playing Lush Caves Music")
     elseif musnum == 107 then sounds:playSound("music.overworld.cherry_grove",player:getPos()) log("Playing Cherry Grove Music")
     elseif musnum == 108 then sounds:playSound("music.overworld.badlands",player:getPos()) log("Playing Badlands Music")
+    elseif musnum == 109 then sounds:playSound("music.under_water",player:getPos()) log("Playing Underwater Music")
     --Nether--
-    elseif musnum == 201 then sounds:playSound("music.nether.basalt_deltas",player:getPos()) log("Playing 1.16 Update Music")
+    elseif musnum == 201 then sounds:playSound("music.nether.basalt_deltas",player:getPos()) log("Playing Basalt Deltas Music")
+    elseif musnum == 202 then sounds:playSound("music.nether.crimson_forest",player:getPos()) log("Playing Crimson Forest Music")
+    elseif musnum == 203 then sounds:playSound("music.nether.nether_wastes",player:getPos()) log("Playing Nether Wastes Music")
     --The End--
     elseif musnum == 301 then sounds:playSound("music.credits",player:getPos()) log("Playing [Alpha]")
     --Music Discs--
@@ -58,7 +61,7 @@ function pings.msplay()
     elseif musnum == 407 then sounds:playSound("music_disc.mall",player:getPos()) log("Playing [Mall]")
     elseif musnum == 408 then sounds:playSound("music_disc.11",player:getPos()) log("Playing [11]")
     elseif musnum == 409 then sounds:playSound("music_disc.wait",player:getPos()) log("Playing [Wait]")
-    else log("Error: Invalid Music Number")
+    else log("Error: Invalid Music Number, Retrying...")-- goto gotoname_
     end
 end
 
