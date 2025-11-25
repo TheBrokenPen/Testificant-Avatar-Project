@@ -1,9 +1,9 @@
 require("GSAnimBlend")
 --hide vanilla model
 --vanilla_model.PLAYER:setVisible(true)
-
 --vanilla_model.head:setVisible(true)
 --vanilla_model.body:setVisible(true)
+
 --hide vanilla armor model
 vanilla_model.ARMOR:setVisible(false)
 --re-enable the helmet item

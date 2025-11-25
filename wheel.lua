@@ -67,10 +67,12 @@ end
 
 --Log Printer--
 local annoy = mainPage:newAction()
+--local dateTable = os.date("*t", os.time())
 annoy:item("create:clipboard")
 annoy:title("Show log")
 annoy:onLeftClick(function()
-log("This button just puts this in your chat")
+--log(dateTable.year, dateTable.month, dateTable.day, dateTable.hour, dateTable.min, dateTable.sec)
+log("Example log here ->")
 end)
 
 --Emote Page--
